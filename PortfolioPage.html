@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<title>GRC365PortfolioPage</title>
+<style>
+    	@font-face {
+    } body {
+        background-color: #F2E9E4;
+    } #page {
+        width: 950px;
+        height: 1224px;
+        background: white;
+        margin: 0 auto;
+        padding: 48px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } h1 {
+        font: 48pt/1.0em 'Playfair Display';
+		font-weight: 500;
+        text-align: center;
+		margin-bottom: 30px;
+	} h2 {
+        font: 20pt/1.0em 'Lexend';
+		font-weight: 400;
+        text-align: center;
+		margin-bottom: 50px;
+    } p {
+		font: 16pt/1.4em 'Lexend'
+	} .navbar {
+  		display: flex;
+		justify-content: center;
+  		gap: 16px;
+  		padding: 20px;
+	} button {
+		display: block;
+		margin-left: auto;
+		margin-right: 40px;
+		padding: 9px 14px;
+  		border-radius: 20px;
+  		background: #C9ADA7;
+  		font: 8pt/1.0em 'Lexend';
+		color: black;
+  		transition: transform 0.2s ease, background 0.2s ease;
+	}.dark-mode {
+  		background-color: #22223B;
+  		color: white;
+	} body.dark-mode #page {
+  		background-color: #4A4E69;
+  		color: white;
+		border: none;
+		box-shadow: 2px 3px 6px black;
+/* Button styling */
+	} .nav-btn {
+  		text-decoration: none;
+  		padding: 10px 18px;
+  		border-radius: 20px;
+  		background: #F9F0E4;
+  		color: black;
+  		font: 12pt/1.0em 'Lexend';
+  		font-size: 14px;
+  		transition: transform 0.2s ease, background 0.2s ease;
+/* Hover effect */
+	} .nav-btn:hover {
+  		background: #CBC0B1;
+  		transform: scale(1.05);
+	} .container {
+  		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	} .container figure {
+		flex: 0 0 250px;
+  		margin: 8px;
+  		padding: 15px;
+		margin-bottom: 7px;
+  		font-size: 24px;
+	} .container img {
+		width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 8px;
+		transition: transform 0.3s ease, box-shadow 0.25s ease;
+	} .container img:hover {
+		transform: scale(1.03);
+		box-shadow: 0 7px 17px rgba(0,0,0,0.15);
+	} figcaption {
+		margin-top: 13px;
+		font: 12pt/1.0em 'Lexend';
+		text-align: center;
+	}
+</style>
+</head>
+
+<body>
+<div id="page">
+<button onclick="toggleDark()">Toggle Dark Mode</button>
+	
+<h1>My Works</h1>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-btn">Home</a>
+  <a href="portfolio.html" class="nav-btn">Works</a>
+  <a href="portfoliotable.html" class="nav-btn">Table of Works</a>
+</nav>
+
+	<div class="container">
+		
+  <figure>
+	<a href="ichipairmockup.jpg">
+      <img src="ichipairmockup (3).jpg" width="255" height="330" alt="">
+    </a>
+    <figcaption>Ichi Pair Blind Box</figcaption>
+  </figure>
+	
+ <figure>
+	<a href="IMG_5836.jpg">
+      <img src="IMG_5836 (2).jpg" width="255" height="330" alt="">
+    </a>
+    <figcaption>Rebirth - Gouache Painting</figcaption>
+  </figure>
+
+	<figure>
+	<a href="finishedgrayscaletocolor.jpg">    
+     <img src="finishedgrayscaletocolor (2).jpg" width="255" height="330" alt="">
+    </a>
+    <figcaption>Personal Photo Replication - Digital Painting</figcaption>
+  </figure>
+
+	<figure>
+	<a href="GRC_250_Tour_Promotional_Poster_Final.jpg">    
+     <img src="GRC_250_Tour_Promotional_Poster_Final (2).jpg" width="255" height="330" alt="">
+    </a>
+    <figcaption>Tour Promotional Poster</figcaption>
+  </figure>
+	
+</div>
+</div>
+
+<script>
+function toggleDark() {
+  document.body.classList.toggle("dark-mode");
+}
+</script>
+	
+</body>
+</html>
